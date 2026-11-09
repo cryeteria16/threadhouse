@@ -41,9 +41,10 @@ h1,h2,h3,.brand{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600}
 .filters button.active{background:var(--gold);border-color:var(--gold);color:var(--ink);font-weight:600}
 
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px}
-.item{background:var(--light);color:var(--ink);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
-.item img{width:100%;aspect-ratio:1/1;object-fit:contain;background:#fff;display:block}
-.item .info{padding:14px 16px 18px}
+.item{background:#f6efe2;color:var(--ink);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;border:1px solid rgba(212,162,76,.35);transition:transform .2s,box-shadow .2s}
+.item:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(212,162,76,.18)}
+.item img{width:100%;aspect-ratio:1/1;object-fit:cover;background:#f6efe2;display:block}
+.item .info{padding:12px 0 18px;margin:0 18px;border-top:1px solid rgba(212,162,76,.3)}
 .item h3{font-size:1.2rem;line-height:1.2}
 .item small{color:#7a6e5a;text-transform:uppercase;letter-spacing:.06em;font-size:.72rem}
 
